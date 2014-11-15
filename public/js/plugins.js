@@ -21,4 +21,17 @@
     }
 }());
 
+// using sample from http://stackoverflow.com/questions/17975922/how-to-change-active-class-wile-click-to-another-link-in-bootstrap-use-jquery
+/*$(document).ready(function () {
+    $('.nav li a').click(function(e) {
+
+        $('.nav li').removeClass('active');
+
+        var $parent = $(this).parent();
+        if (!$parent.hasClass('active')) {
+            $parent.addClass('active');
+        }
+        e.preventDefault();
+    });
+});*/
 // Place any jQuery/helper plugins in here.
