@@ -5,7 +5,7 @@ define([
     'views/home/HomeView',
     'views/blog/BlogView'
 ], function ($, _, Backbone, HomeView, BlogView) {
-    "use strict";
+//    "use strict";
     var AppRouter = Backbone.Router.extend({
         routes: {
             // Define some URL routes

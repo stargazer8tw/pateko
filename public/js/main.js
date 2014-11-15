@@ -1,8 +1,8 @@
 require.config({
     paths: {
-        text: '../lib/require/text',
         jquery: '../lib/jquery/jquery-1.11.1.min',
-        underscore: '../lib/underscore/underscore-min',
+        text: '../lib/require/text',
+//        underscore: '../lib/underscore/underscore-min',
         lodash: '../lib/lodash/lodash.min',
         backbone: '../lib/backbone/backbone-min',
         templates: '../templates',
@@ -28,10 +28,10 @@ require([
     'jquery',
     'modernizr',
     'bootstrap',
-    'plugins',
+    // 'plugins',
     'app'
 ], function (App) {
-    "use strict";
+    // "use strict";
     // The "app" dependency is passed in as "App"
     // Again, the other dependencies passed in are not "AMD" therefore don't pass a parameter to this function
 

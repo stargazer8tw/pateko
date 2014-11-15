@@ -4,7 +4,7 @@ define([
     'backbone',
     'text!templates/home/homeTemplate.html'
 ], function ($, _, Backbone, homeTemplate) {
-    "use strict";
+//    "use strict";
     var HomeView = Backbone.View.extend({
         el: $("#page"),
 

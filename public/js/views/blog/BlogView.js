@@ -5,7 +5,7 @@ define([
     //'models/blog/BlogModel',
     'text!templates/blog/blogTemplate.html'
 ], function ($, _, Backbone, blogTemplate) {
-    "use strict";
+//    "use strict";
     var BlogView = Backbone.View.extend({
         el: $("#page"),
         render: function () {
