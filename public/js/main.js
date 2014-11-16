@@ -13,74 +13,62 @@ require.config({
         markdown_sanitizer: '../lib/pagedown/Markdown.Sanitizer'
     },
     shim: {
-        bootstrap: {
-            deps: ['jquery'],
-            exports: '$.fn.popover'
-        },
-        'bootstrap/bootstrap-slider': {
-            deps: ['jquery'],
-            exports: '$.fn.slider'
-        },
-        'bootstrap/bootstrap-affix': {
+        'bootstrap/affix': {
             deps: ['jquery'],
             exports: '$.fn.affix'
         },
-        'bootstrap/bootstrap-alert': {
+        'bootstrap/alert': {
             deps: ['jquery'],
             exports: '$.fn.alert'
         },
-        'bootstrap/bootstrap-button': {
+        'bootstrap/button': {
             deps: ['jquery'],
             exports: '$.fn.button'
         },
-        'bootstrap/bootstrap-carousel': {
+        'bootstrap/carousel': {
             deps: ['jquery'],
             exports: '$.fn.carousel'
         },
-        'bootstrap/bootstrap-collapse': {
+        'bootstrap/collapse': {
             deps: ['jquery'],
             exports: '$.fn.collapse'
         },
-        'bootstrap/bootstrap-dropdown': {
+        'bootstrap/dropdown': {
             deps: ['jquery'],
             exports: '$.fn.dropdown'
         },
-        'bootstrap/bootstrap-modal': {
+        'bootstrap/modal': {
             deps: ['jquery'],
             exports: '$.fn.modal'
         },
-        'bootstrap/bootstrap-popover': {
+        'bootstrap/popover': {
             deps: ['jquery'],
             exports: '$.fn.popover'
         },
-        'bootstrap/bootstrap-scrollspy': {
+        'bootstrap/scrollspy': {
             deps: ['jquery'],
             exports: '$.fn.scrollspy'
         },
-        'bootstrap/bootstrap-tab': {
+        'bootstrap/tab': {
             deps: ['jquery'],
             exports: '$.fn.tab'
         },
-        'bootstrap/bootstrap-tooltip': {
+        'bootstrap/tooltip': {
             deps: ['jquery'],
             exports: '$.fn.tooltip'
         },
-        'bootstrap/bootstrap-transition': {
+        'bootstrap/transition': {
             deps: ['jquery'],
-            exports: '$.support.transition'
-        },
-        'bootstrap/bootstrap-typeahead': {
-            deps: ['jquery'],
-            exports: '$.fn.typeahead'
+            exports: '$.fn.transition'
         }
     },
     enforceDefine: true
 });
 
 require([
-//     'jquery',
-//     'modernizr',
-//     'bootstrap',
+ //     'jquery',
+ //     'modernizr',
+ //     'bootstrap',
  //    'plugins',
     'app'
 ], function (App) {
