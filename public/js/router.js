@@ -1,6 +1,6 @@
 define([
     'jquery',
-    'lodash',
+    'underscore',
     'backbone',
     'views/home/HomeView',
     'views/blog/BlogView'
