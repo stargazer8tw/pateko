@@ -1,9 +1,9 @@
 Pateko
-======
+===
 
 simple web content
 
-**Reference:**
+**Source Code:**
 - underscore: http://underscorejs.org/
 - lodash: https://lodash.com/
 - backbone: http://backbonejs.org/
@@ -20,7 +20,8 @@ simple web content
 - https://github.com/showdownjs/showdown
 - http://kevo.io/pagedown-bootstrap/
 
-**Reference**
+**Reference:**
+- http://html5boilerplate.com/
 - http://markdown.tw/
 - https://mathiasbynens.be/notes/showdown-javascript-jquery
 - http://www.jaceju.net/blog/archives/beginning-requirejs/
