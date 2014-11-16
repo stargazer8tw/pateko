@@ -2,6 +2,7 @@ require.config({
     paths: {
         'data.content': '../content',
         'data.templates': '../templates',
+        'data.images': '../img',
         // javascript library
         jquery: '../lib/jquery/jquery-2.1.1.min',
         text: '../lib/require/text',
