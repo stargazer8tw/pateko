@@ -3,9 +3,6 @@ Pateko
 
 simple web content
 
-
----
-
 **Reference:**
 - underscore: http://underscorejs.org/
 - lodash: https://lodash.com/
@@ -23,7 +20,6 @@ simple web content
 - https://github.com/showdownjs/showdown
 - http://kevo.io/pagedown-bootstrap/
 
----
 **Reference**
 - http://markdown.tw/
 - https://mathiasbynens.be/notes/showdown-javascript-jquery
