@@ -7,7 +7,7 @@ This is Static Website Blog template project.
 
 > This is using showdown to convert markdown to html
 
-Testing Markdown using StackEdit sample
+Testing using StackEdit sample
 ===
 
 Welcome to StackEdit!
@@ -259,8 +259,6 @@ cond(no)->op
 > - about **Flow charts** syntax [here][8].
 
 ### Support StackEdit
-
-[![](https://cdn.monetizejs.com/resources/button-32.png)](https://monetizejs.com/authorize?client_id=ESTHdCYOi18iLhhO&summary=true)
 
   [^stackedit]: [StackEdit](https://stackedit.io/) is a full-featured, open-source Markdown editor based on PageDown, the Markdown library used by Stack Overflow and the other Stack Exchange sites.
 
