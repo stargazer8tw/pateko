@@ -8,9 +8,9 @@ require.config({
         templates: '../templates',
         //routerjs: '../lib/routerjs/router.min',
         modernizr: '../lib/modernizr/modernizr-2.6.2.min',
-        bootstrap: '../lib/bootstrap/bootstrap.min'
-        //markdown_converter: '../lib/pagedown/Markdown.Converter',
-        //markdown_sanitizer: '../lib/pagedown/Markdown.Sanitizer'
+        bootstrap: '../lib/bootstrap/bootstrap.min',
+        markdown_converter: '../lib/pagedown/Markdown.Converter',
+        markdown_sanitizer: '../lib/pagedown/Markdown.Sanitizer'
     }
 
 });
@@ -31,7 +31,7 @@ require([
     'plugins',
     'app'
 ], function ($, M, B, P, App) {
-     "use strict";
+    "use strict";
     // The "app" dependency is passed in as "App"
     // Again, the other dependencies passed in are not "AMD" therefore don't pass a parameter to this function
 

@@ -3,8 +3,9 @@ define([
     'underscore',
     'backbone',
     'views/home/HomeView',
-    'views/blog/BlogView'
-], function ($, _, Backbone, HomeView, BlogView) {
+    'views/blog/BlogView',
+    'views/about/AboutView'
+], function ($, _, Backbone, HomeView, BlogView, AboutView) {
 //    "use strict";
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -13,9 +14,6 @@ define([
             'about': 'showAbout',
             // Default
             '*actions': 'defaultAction'
-        },
-        showAbout: function () {
-            alert('popup about');
         }
     });
 
@@ -29,6 +27,11 @@ define([
             var blogView = new BlogView();
             blogView.render();
 
+        });
+
+        app_router.on('route:showAbout', function () {
+            var aboutView = new AboutView();
+            aboutView.render();
         });
 
         app_router.on('route:defaultAction', function (actions) {
