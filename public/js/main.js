@@ -2,7 +2,7 @@ require.config({
     paths: {
         jquery: '../lib/jquery/jquery-1.11.1.min',
         text: '../lib/require/text',
-//        underscore: '../lib/underscore/underscore-min',
+        underscore: '../lib/underscore/underscore-min',
         lodash: '../lib/lodash/lodash.min',
         backbone: '../lib/backbone/backbone-min',
         templates: '../templates',
