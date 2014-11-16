@@ -2,7 +2,7 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!defaultTemplate'
+    'text!data.templates/default.html'
 ], function ($, _, Backbone, defaultTemplate) {
     "use strict";
     var AboutView = Backbone.View.extend({

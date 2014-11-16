@@ -2,8 +2,10 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!defaultTemplate'
-], function ($, _, Backbone, defaultTemplate) {
+    'showdown',
+    'text!data.templates/default.html',
+    'text!data.content/home/home.md'
+], function ($, _, Backbone, Showdown, defaultTemplate, C) {
     "use strict";
     var HomeView = Backbone.View.extend({
         el: $("#page"),
@@ -12,8 +14,12 @@ define([
 
             $('.nav li').removeClass('active');
             $('.nav li a[href="#"]').parent().addClass('active');
-            this.$el.html(defaultTemplate);
-
+            var content = this.$el.html(defaultTemplate);
+//            var hiddenBox = $( "#banner" );
+//            hiddenBox.show();
+//            this.$el.find("#main").html(C);
+            var converter = new Showdown.converter();
+            $( '#main' ).html(converter.makeHtml(C));
         }
 
     });

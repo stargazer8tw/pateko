@@ -1,18 +1,19 @@
 require.config({
     paths: {
-        md: '../content',
-        templates: '../templates',
-        defaultTemplate: '../templates/default.html',
+        'data.content': '../content',
+        'data.templates': '../templates',
         // javascript library
-        jquery: '../lib/jquery/jquery-1.11.1.min',
+        jquery: '../lib/jquery/jquery-2.1.1.min',
         text: '../lib/require/text',
         underscore: '../lib/underscore/underscore-min',
         backbone: '../lib/backbone/backbone-min',
         // none amd compliance
         modernizr: '../lib/modernizr/modernizr-2.6.2.min',
         bootstrap: '../lib/bootstrap/bootstrap.min',
-        markdownConverter: '../lib/pagedown/Markdown.Converter',
-        markdownSanitizer: '../lib/pagedown/Markdown.Sanitizer'
+        showdown: '../lib/showdown/showdown'
+//        markdownConverter: '../lib/pagedown/Markdown.Converter',
+//        markdownSanitizer: '../lib/pagedown/Markdown.Sanitizer',
+//        mdown: '../lib/require/mdown'
     },
     shim: {
         'bootstrap': {
@@ -66,11 +67,11 @@ require.config({
         'bootstrap/transition': {
             deps: ['jquery'],
             exports: '$.fn.transition'
-        },
-        // markdown
-        'markdown': {
-            deps: ['markdownConverter', 'markdownSanitizer'],
-            exports: '$.fn.markdown'
+//        },
+//        // markdown
+//        'markdown': {
+//            deps: ['markdownConverter', 'markdownSanitizer'],
+//            exports: '$.fn.markdown'
         }
     },
     enforceDefine: true

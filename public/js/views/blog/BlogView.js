@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     //'models/blog/BlogModel',
-    'text!defaultTemplate'
+    'text!data.templates/default.html'
 ], function ($, _, Backbone, defaultTemplate) {
     "use strict";
     var BlogView = Backbone.View.extend({
