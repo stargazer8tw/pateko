@@ -11,9 +11,9 @@ require.config({
         modernizr: '../lib/modernizr/modernizr-2.6.2.min',
         bootstrap: '../lib/bootstrap/bootstrap.min',
         showdown: '../lib/showdown/showdown'
-//        markdownConverter: '../lib/pagedown/Markdown.Converter',
-//        markdownSanitizer: '../lib/pagedown/Markdown.Sanitizer',
-//        mdown: '../lib/require/mdown'
+//        markdownConverter: "../lib/pagedown/Markdown.Converter",
+//        markdownSanitizer: '../lib/pagedown/Markdown.Sanitizer'
+        //        mdown: '../lib/require/mdown'
     },
     shim: {
         'bootstrap': {
@@ -70,12 +70,25 @@ require.config({
 //        },
 //        // markdown
 //        'markdown': {
-//            deps: ['markdownConverter', 'markdownSanitizer'],
-//            exports: '$.fn.markdown'
+//            deps: ['markdownConverter'],
+//            exports: 'markdownSanitizer'
         }
     },
     enforceDefine: true
 });
+
+//define("markdown", ["markdownConverter", "markdownSanitizer"], function (mc, ms) {
+//    "use strict";
+//    return window.Markdown;
+//});
+//
+//define("markdown", function (markdown) {
+//    "use strict";
+//    var converter = new Markdown.Converter();
+//    return {
+//        converter: converter
+//    }
+//});
 
 require([
  //     'jquery',

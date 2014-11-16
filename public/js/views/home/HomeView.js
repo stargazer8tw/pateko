@@ -19,7 +19,7 @@ define([
 //            hiddenBox.show();
 //            this.$el.find("#main").html(C);
             var converter = new Showdown.converter();
-            $( '#main' ).html(converter.makeHtml(C));
+            $('#main').html(converter.makeHtml(C));
         }
 
     });
