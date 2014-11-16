@@ -1,18 +1,24 @@
 require.config({
     paths: {
+        md: '../content',
+        templates: '../templates',
+        defaultTemplate: '../templates/default.html',
+        // javascript library
         jquery: '../lib/jquery/jquery-1.11.1.min',
         text: '../lib/require/text',
         underscore: '../lib/underscore/underscore-min',
-        //        lodash: '../lib/lodash/lodash.min',
         backbone: '../lib/backbone/backbone-min',
-        templates: '../templates',
-        //routerjs: '../lib/routerjs/router.min',
+        // none amd compliance
         modernizr: '../lib/modernizr/modernizr-2.6.2.min',
         bootstrap: '../lib/bootstrap/bootstrap.min',
-        markdown_converter: '../lib/pagedown/Markdown.Converter',
-        markdown_sanitizer: '../lib/pagedown/Markdown.Sanitizer'
+        markdownConverter: '../lib/pagedown/Markdown.Converter',
+        markdownSanitizer: '../lib/pagedown/Markdown.Sanitizer'
     },
     shim: {
+        'bootstrap': {
+            deps: ['jquery'],
+            exports: '$.fn.popover'
+        },
         'bootstrap/affix': {
             deps: ['jquery'],
             exports: '$.fn.affix'
@@ -60,6 +66,11 @@ require.config({
         'bootstrap/transition': {
             deps: ['jquery'],
             exports: '$.fn.transition'
+        },
+        // markdown
+        'markdown': {
+            deps: ['markdownConverter', 'markdownSanitizer'],
+            exports: '$.fn.markdown'
         }
     },
     enforceDefine: true
@@ -68,10 +79,10 @@ require.config({
 require([
  //     'jquery',
  //     'modernizr',
- //     'bootstrap',
+    'bootstrap',
  //    'plugins',
     'app'
-], function (App) {
+], function (Bootstrap, App) {
     "use strict";
     // The "app" dependency is passed in as "App"
     // Again, the other dependencies passed in are not "AMD" therefore don't pass a parameter to this function
