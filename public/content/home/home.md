@@ -1,6 +1,8 @@
 Pateko
 ===
 
+"Pateko" means Motionless, or idle in Maori language, see [Source][3].
+
 This is static website blog template project.
 
 **Using:**
@@ -16,3 +18,4 @@ This is static website blog template project.
 
 [1]:http://en.wikipedia.org/wiki/Asynchronous_module_definition
 [2]:https://github.com/amdjs/amdjs-api/wiki/AMD
+[3]:http://nzetc.victoria.ac.nz/tm/scholarly/tei-WillDict-t1-body-d1-d10.html#n296
