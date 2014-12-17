@@ -4,14 +4,14 @@ require.config({
         'data.templates': '../templates',
         'data.images': '../img',
         // javascript library
-        jquery: '../lib/jquery/jquery-2.1.1.min',
-        text: '../lib/require/text',
-        underscore: '../lib/underscore/underscore-min',
-        backbone: '../lib/backbone/backbone-min',
+        jquery: 'lib/jquery/jquery-2.1.1.min',
+        text: 'lib/require/text',
+        underscore: 'lib/underscore/underscore-min',
+        backbone: 'lib/backbone/backbone-min',
         // none amd compliance
-        modernizr: '../lib/modernizr/modernizr-2.6.2.min',
-        bootstrap: '../lib/bootstrap/bootstrap.min',
-        showdown: '../lib/showdown/showdown'
+        modernizr: 'lib/modernizr/modernizr-2.6.2.min',
+        bootstrap: 'lib/bootstrap/bootstrap.min',
+        showdown: 'lib/showdown/showdown'
 //        markdownConverter: "../lib/pagedown/Markdown.Converter",
 //        markdownSanitizer: '../lib/pagedown/Markdown.Sanitizer'
         //        mdown: '../lib/require/mdown'

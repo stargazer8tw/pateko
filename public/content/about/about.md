@@ -3,6 +3,5 @@ Me
 
 ![](./img/moemoe.jpg)
 
-Java Developer written web application.
-
+Java Developer writes web application.
 
