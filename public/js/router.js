@@ -2,10 +2,11 @@ define([
     'jquery',
     'underscore',
     'backbone',
+    'pateko',
     'views/home/HomeView',
     'views/blog/BlogView',
     'views/about/AboutView'
-], function ($, _, Backbone, HomeView, BlogView, AboutView) {
+], function ($, _, Backbone, Pateko, HomeView, BlogView, AboutView) {
 //    "use strict";
     var AppRouter = Backbone.Router.extend({
         routes: {

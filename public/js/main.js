@@ -8,6 +8,7 @@ require.config({
         text: 'lib/require/text',
         underscore: 'lib/underscore/underscore-min',
         backbone: 'lib/backbone/backbone-min',
+        pateko: 'lib/pateko/pateko',
         // none amd compliance
         modernizr: 'lib/modernizr/modernizr-2.6.2.min',
         bootstrap: 'lib/bootstrap/bootstrap.min',

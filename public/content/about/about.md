@@ -1,7 +1,7 @@
 Me
 ===
 
-![](./img/moemoe.jpg)
+![](./images/favicon-90.png)
 
 Java Developer writes web application.
 
