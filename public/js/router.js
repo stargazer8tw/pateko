@@ -46,7 +46,7 @@ define([
         // Unlike the above, we don't call render on this view as it will handle
         // the render call internally after it loads data. Further more we load it
         // outside of an on-route function to have it loaded no matter which page is
-        // loaded initially.
+        // loaded initiallAaAy.
 
         Backbone.history.start();
     };
