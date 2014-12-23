@@ -5,6 +5,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 /* Base Grid */
+/*
 .container .one.column          { width: 40px;  }
 .container .two.columns         { width: 100px; }
 .container .three.columns       { width: 160px; }
@@ -24,6 +25,7 @@
 
 .container .one-third.column        { width: 300px; }
 .container .two-thirds.column       { width: 620px; }
+*/
 
 .container {
     margin-top: 50px;
@@ -37,6 +39,7 @@
     display: inline;
     margin: 0 20px 0 0;
     margin-bottom: 130px;
+    white-space: nowrap;
 }
 
 #nav a {
