@@ -27,17 +27,15 @@
         <![endif]-->
     <div class="container">
         <div class="row">
-            <div class="three columns">
-                <h1>Pateko</h1>
-            </div>
-            <div id="nav" class="nine columns">
-                <ul class="egmenu">
+            <label for="show-menu" class="show-menu">Show Menu</label><input type="checkbox" id="show-menu" role="button">
+            <nav class="clearfix">
+                <ul id="menu" class="clearfix">
                     <li class="active"><a href="#">Home</a>
                     </li>
                     <li><a href="#blog">Blog</a>
                     </li>
                     <li><a href="#" class="has-sub">Drop Down</a>
-                        <ul>
+                        <ul class="hidden">
                             <li><a href="#">a</a>
                             </li>
                             <li><a href="#">b</a>
@@ -52,7 +50,8 @@
                     </li>
                 </ul>
                 <!--/.navbar-collapse -->
-            </div>
+                <a herf="#" id="pull">Menu</a>
+            </nav>
         </div>
     </div>
     <!-- Main jumbotron for a primary marketing message or call to action -->

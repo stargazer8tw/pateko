@@ -1,5 +1,5 @@
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+(function () {
     var method;
     var noop = function () {};
     var methods = [
@@ -36,7 +36,31 @@
 });*/
 // Place any jQuery/helper plugins in here.
 
-$('.has-sub').click( function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass('tap');
-});
+
+//define([
+//    'jquery'
+//], function ($) {
+//    "use strict";
+//    $('.has-sub').click(function (e) {
+//        e.preventDefault();
+//        $(this).parent().toggleClass('tap');
+//    });
+//
+//    $(function () {
+//        var pull = $('#pull');
+//        menu = $('nav ul');
+//        menuHeight = menu.height();
+//
+//        $(pull).on('click', function (e) {
+//            e.preventDefault();
+//            menu.slideToggle();
+//        });
+//
+//        $(window).resize(function () {
+//            var w = $(window).width();
+//            if (w > 320 && menu.is(':hidden')) {
+//                menu.removeAttr('style');
+//            }
+//        });
+//    });
+//});
