@@ -14,8 +14,8 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/lib/skeleton/normalize.css">
-    <link rel="stylesheet" href="css/lib/skeleton/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/pateko.css">
     <link rel="icon" type="image/png" href="images/favicon-16.png" />
     <script data-main="js/main" src="js/lib/require/require.js"></script>
@@ -27,19 +27,23 @@
         <![endif]-->
     <div class="container">
         <div class="row">
-            <nav class="clearfix">
-                <ul id="menu" class="clearfix">
-                    <li class="active"><a href="#">Home</a>
-                    </li>
-                    <li><a href="#blog">Blog</a>
-                    </li>
-                    <li><a href="#about">About</a>
-                    </li>
-                </ul>
-                <!--/.navbar-collapse -->
-                <a herf="#" id="pull">Menu</a>
-            </nav>
+            <div class="three columns"><h3>Pateko</h3></div>
+            <div class="nine columns">
+                <input type="checkbox" id="navbar-checkbox" class="navbar-checkbox" hidden="true">
+                <nav class="menu">
+                    <ul>
+                        <li class="active"><a href="#">Home</a>
+                        </li>
+                        <li><a href="#blog">Blog</a>
+                        </li>
+                        <li><a href="#about">About</a>
+                        </li>
+                    </ul>
+                    <label for="navbar-checkbox" class="navbar-handle"></label>
+                </nav>
+            </div>
         </div>
+
     </div>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="banner" class="jumbotron" hidden="true">
